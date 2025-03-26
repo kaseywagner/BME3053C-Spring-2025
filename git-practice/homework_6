@@ -1,0 +1,15 @@
+1. ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+    solved with ls and then cat readme
+
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+
+
+2. 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+    ls, cat ./- (./ makes cat treat "-" as a filename instead of a symbol)
+
+3. MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+    ls, cat "spaces in this filename" (have to put "" around it since there are spaces it treats them as four different files)
+
+4. 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+    ls, ls -a, cd inhere, cat ...Hiding-From-You
+    
