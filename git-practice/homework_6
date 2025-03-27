@@ -1,8 +1,7 @@
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+
 1. ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
     solved with ls and then cat readme
-
-ssh bandit9@bandit.labs.overthewire.org -p 2220
-
 
 2. 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
     ls, cat ./- (./ makes cat treat "-" as a filename instead of a symbol)
