@@ -1,7 +1,7 @@
 1. ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
     solved with ls and then cat readme
 
-ssh bandit3@bandit.labs.overthewire.org -p 2220
+ssh bandit9@bandit.labs.overthewire.org -p 2220
 
 
 2. 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
@@ -12,4 +12,34 @@ ssh bandit3@bandit.labs.overthewire.org -p 2220
 
 4. 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
     ls, ls -a, cd inhere, cat ...Hiding-From-You
+
+5.4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+    ls, ls -a, cd inhere, ls -a, cat ./-file07
     
+6. HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+    ls, ls -a, cd inhere, ls -la, file */{.,}* | grep "ASCII text" | grep -v ', with very long lines', du -b -a | grep 1033, cat ./maybehere07/.file2
+        grep is used to filter, ASCII is the only human readable filetype
+        file */{.,}* returns the file type for every file in the folder inhere
+
+7. morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+    find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+    find — A command that searches for files and directories.
+    / — The starting point for the search (root directory). This makes the search system-wide.
+    -type f — Limits the search to files (not directories).
+    -user bandit7 — Searches for files owned by the user bandit7.
+    -group bandit6 — Searches for files that belong to the group bandit6.
+    -size 33c — Finds files that are 33 bytes in size (the c stands for bytes).
+    2>/dev/null — Suppresses error messages (like "Permission denied") by redirecting them to /dev/null.
+
+8. dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+    ls, cat data.txt | grep millionth
+
+9. 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+    sort data.txt | uniq -u
+    sort data.txt — The sort command organizes the contents of data.txt in lexicographical order.
+    | — The pipe sends the sorted output to the next command.
+    uniq -u — The uniq command filters out repeated lines and shows only unique lines (lines that appear exactly once). - because of -u
+            it can also count (-c) or only return duplicate lines (-d).
+
+10. FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+    strings data.txt | grep ==
